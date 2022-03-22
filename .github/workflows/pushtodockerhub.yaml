@@ -1,0 +1,11 @@
+name: Push to Docker Hub
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  thuchienpush:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out
+      - uses: actions/checkout@v2
