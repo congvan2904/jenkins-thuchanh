@@ -27,6 +27,8 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: tag_push_docker
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
       -
         name: verify
         run: echo ${{steps.docker_build.outputs.digest}}
