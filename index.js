@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(PORT, () => console.log(`Dang chay ${PORT}`))
+app.listen(PORT, () => console.log(`Dang run ${PORT}`))
