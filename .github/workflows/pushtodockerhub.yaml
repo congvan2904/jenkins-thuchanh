@@ -1,4 +1,4 @@
-name: Push to Docker Hub
+name: PushtoDocker
 on:
   push:
     branches: [main]
@@ -26,7 +26,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-push
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/PushtoDocker
       -
         name: verify
         run: echo ${{steps.docker_build.outputs.digest}}
