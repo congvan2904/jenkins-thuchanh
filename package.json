@@ -1,0 +1,12 @@
+{
+  "name": "hocjenkin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/congvan2904/jenkins-thuchanh.git",
+  "author": "congvan2904 <nguyenvancong.nvc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
