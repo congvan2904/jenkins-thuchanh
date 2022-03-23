@@ -23,7 +23,7 @@ jobs:
         with:
           path: /tmp/.buildx-cache
           key: ${{runner.os}}-buildx-${{github.sha}}
-          restores-key: |
+          restore-keys: |
             ${{runner.os}}-buildx-
 
       -
