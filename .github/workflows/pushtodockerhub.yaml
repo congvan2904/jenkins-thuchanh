@@ -36,8 +36,8 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/push-docker
-          cache-from: type=local, src=/tmp/.buildx-cache
-          cache-to: type=local , dest=/tmp/.buildx-cache
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
       -
         name: verify
         run: echo ${{steps.docker_build.outputs.digest}}
